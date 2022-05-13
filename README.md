@@ -18,6 +18,8 @@ colliding group is in the working tree:
   'tests/test.txt'
 ```
 
+Hint: Clone this repository to check whether it is an actual problem on your Mac and also to check the solution shown below.
+
 ## Why does it happen?
 In the repository you want to clone are files with the same name only distinguished by casing as shown in the following example.
 
