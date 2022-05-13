@@ -1,6 +1,6 @@
 # git on APFS
 You got a new Mac and got it set up with the standard filesystem to get started quickly. What could go wrong some month down the line?\
-After using your Mac for quite some time you have to work with your team on a piece of software. You clone it and what do you get? Oh, no!
+After using your Mac for quite some time you have to work with your team on a piece of software. You clone its repository and... Oh, no!
 ```
 ❯ git clone git@github.com:wunderlicht/gitonapfs.git
 Cloning into 'gitonapfs'...
@@ -76,5 +76,5 @@ hdutil detach ./repos
 ```
 
 ## Take away
-- When you're installing a new Mac consider to format your SSD with the APFS (Case-sensitive) filesystem or (preferrably with its encrypted variant).
-- Use clearly distinguishable names in your codebase. 
+- When you're installing a new Mac consider to format your SSD with the APFS (Case-sensitive) filesystem (preferrably with its encrypted variant) or
+- Use clearly distinguishable names in your codebase (the preffered option). 
