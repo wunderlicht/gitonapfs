@@ -69,7 +69,7 @@ git clone <repository>
 ```
 Now, get some work done on your repository. Maybe rename the files to something more distinguishable, s. [Take away](#take-away) below 
 
-Note: You cannot clone a repository directly into ./repos. Once the image is mounted some meta data of the image exist as a hidden directory. Hence ./repo isn't empty and git will complain.
+Note: You cannot clone a repository directly into ./repos. Once the image is mounted some meta data of the image exist as a hidden directory. Hence ./repo isn't empty and git will complain. (There is a solution for it but for the sake of simplicity it is ignored here)
 
 ### Unmount/detach the Image
 Once your work is done, detach the image.
