@@ -74,7 +74,7 @@ Note: You cannot clone a repository directly into ./repos. Once the image is mou
 ### Unmount/detach the Image
 Once your work is done, detach the image.
 ```
-hdutil detach ./repos
+hdiutil detach ./repos
 ```
 
 ## Take away
