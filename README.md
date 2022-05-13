@@ -1,6 +1,22 @@
 # git on APFS
 You got a new Mac and got it set up with the standard filesystem to get started quickly. What could go wrong some month down the line?\
 After using your Mac for quite some time you have to work with your team on a piece of software. You clone it and what do you get? Oh, no!
+```
+❯ git clone git@github.com:wunderlicht/gitonapfs.git
+Cloning into 'gitonapfs'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 15 (delta 2), reused 5 (delta 0), pack-reused 0
+Receiving objects: 100% (15/15), 4.24 KiB | 4.24 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+warning: the following paths have collided (e.g. case-sensitive paths
+on a case-insensitive filesystem) and only one from the same
+colliding group is in the working tree:
+
+  'tests/Test.txt'
+  'tests/test.txt'
+```
 
 ## Why does it happen?
 In the repository you want to clone are files with the same name only distinguished by casing as shown in the following example.
