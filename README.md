@@ -62,7 +62,7 @@ hdiutil attach devimage.sparsebundle -mountpoint ./repos
 ```
 
 ### Clone a Repository into the attached Image
-Change into the 
+Change into the mounted image.
 ```
 cd ./repos
 git clone <repository>
