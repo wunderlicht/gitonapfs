@@ -83,6 +83,18 @@ Once your work is done, detach the image.
 hdiutil detach ./repos
 ```
 
+### Problems
+I noticed that sometimes the image will not detach. Sometimes git leaves some files open for no obvious reason. You can find the files using
+```
+lsof | grep repos
+```
+
+Sometimes you need to forcefully detach the image.
+```
+hdiutil detach -force ./repos
+```
+
+
 ## Take away
 - When you're installing a new Mac consider to format your SSD with the APFS (Case-sensitive) filesystem (preferrably with its encrypted variant) or
 - Use clearly distinguishable names in your codebase (the preffered option). 
