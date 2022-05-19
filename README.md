@@ -78,15 +78,15 @@ Now, get some work done on your repository. Maybe rename the files to something 
 Note: You cannot clone a repository directly into ./repos. Once the image is mounted some meta data of the image exist as a hidden directory. Hence ./repo isn't empty and git will complain. (There is a solution for it but for the sake of simplicity it is ignored here)
 
 ### Unmount/detach the Image
-Once your work is done, detach the image.
+Once your work is done, change directory into the parent directory of repos (mount point) and detach the image.
 ```
 hdiutil detach ./repos
 ```
 
 ### Problems
-I noticed that sometimes the image will not detach. Sometimes git leaves some files open for no obvious reason. You can find the files using
+I noticed that sometimes the image will not detach. Sometimes some files are left open for no obvious reason. You can find these files using
 ```
-lsof | grep repos
+lsof +D ./repos
 ```
 
 Sometimes you need to forcefully detach the image.
