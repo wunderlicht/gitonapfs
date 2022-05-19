@@ -61,6 +61,12 @@ Now let's mount it.
 hdiutil attach devimage.sparsebundle -mountpoint ./repos
 ```
 
+In order to flawlessly unmount the image later we need to prevent Spotlight from doing its usually valuable work. Prevent indexing and searching.
+```
+sudo mdutil -i off -d ./repos
+```
+
+
 ### Clone a Repository into the attached Image
 Change into the mounted image.
 ```
