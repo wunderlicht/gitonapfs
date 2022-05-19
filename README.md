@@ -88,8 +88,9 @@ I noticed that sometimes the image will not detach. Sometimes some files are lef
 ```
 lsof +D ./repos
 ```
+Usually it is fixed by closing your terminal session.
 
-Sometimes you need to forcefully detach the image.
+If all else fails you need to forcefully detach the image.
 ```
 hdiutil detach -force ./repos
 ```
